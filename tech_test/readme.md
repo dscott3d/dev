@@ -16,5 +16,13 @@ By default, the tool with export the processed data to the local directory as:
 This can be overridden using:<br>
 `python src/commandline.py -i <path to your file> -o <chosen exported file path>`
 
+The tool will manage the data, and can convert to any format, eg:<br>
+- txt > txt<br>
+- txt > json<br>
+- json > txt<br>
+- json > json<br>
+
+The sample data shows good and bad examples. The text files should contain one entry per line, with comma separation. No header line needed. The Json file should contain a name, address and phone for each entry.
+
 To run the tests, use the following:<br>
 `python -m unittest discover`

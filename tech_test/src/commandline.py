@@ -15,15 +15,14 @@ import contactsExporter
 
 
 def parse_args(args, prog_version='1.0', prog_usage='', misc_opts=None):
-    parser = argparse.ArgumentParser(description='Commandline tool to read, store and display contact details. The currently'
+    parser = argparse.ArgumentParser(description='Commandline tool to read and write contact details. The currently '
                                                  'supported formats are:\n- import formats: %s\n-export formats: %s' %
                                                  (contactsImporter.getSupportedImportFormats(),
                                                   contactsExporter.getSupportedExportFormats()))
     parser.add_argument('-i',
                         '--input_file',
                         default=constants.DEFAULT_TEXT_FILE,
-                        help="The input file, which should containing comma separated data, eg. Name, Address, Phone" \
-                             " on each line, for each entry.")
+                        help="The input file, which should contain 'Name, Address, Phone' for each entry.")
     parser.add_argument('-o',
                         '--output_file',
                         default=constants.EXPORT_TEXT_FILE,

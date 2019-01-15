@@ -1,4 +1,4 @@
-Name,Address,PhoneNumber
+Text File Sample Address 555-0000
 Bruce Wayne Wayne Manor 555-7888
 Emmet Brickowski
 Metal Beard

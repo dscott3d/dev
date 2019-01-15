@@ -60,7 +60,7 @@ class TextImporter(BaseImporter):
 
     def parseInfo(self):
 
-        for each in self.info[1:]:
+        for each in self.info:
             c = {}
             info = each.split(',')
             if self.isValidEntry(info):

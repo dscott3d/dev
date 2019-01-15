@@ -55,7 +55,7 @@ class TestTextImporter(unittest.TestCase):
     def test_text_importer(self):
         self.assertEquals(len(self.importer.info), 0)
         self.importer.readFile()
-        self.assertEquals(len(self.importer.info), 6)
+        self.assertEquals(len(self.importer.info), 5)
 
     def test_parseInfo(self):
         self.importer.readFile()
